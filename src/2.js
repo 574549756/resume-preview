@@ -1,0 +1,3 @@
+functon a(){
+  console.log()
+}
