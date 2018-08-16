@@ -14,7 +14,12 @@
     <p>移动端页面 会使用rem、vw/vh、FastClick(去看看别人的博客) 等技术制作适配手机设备的页面</p>
         </div>
     </div>
-    <div class="project">这里是项目 源码 预览 二维码(https://cli.im) 关键词 描述</div>
+    <div class="project">这里是项目 源码 预览 二维码(https://cli.im) 关键词 描述
+      <p>scrollreveal js</p>
+      <p>echarts</p>
+      <p>particle js</p>
+      <p>awesome javascript</p>
+    </div>
 </div>
 </template>
 
