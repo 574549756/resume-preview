@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    <div class="header">这里是头</div>
+    <topbar class="header"/>
     <div class="IdBoard">这里是名片卡
         <footer class="connection">这里是联系方式</footer>
     </div>
@@ -24,8 +24,16 @@
 </template>
 
 <script>
+import topbar from './components/topBar'
+
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {}
+  },
+  components: {
+    topbar
+  }
 }
 </script>
 
@@ -38,9 +46,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   .header {
-    height: 40px;
+    height: 56px;
     width: 100%;
-    background: #f8f8f8;
+    background: green;
     position: absolute;
     top: 0;
   }
