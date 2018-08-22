@@ -6,7 +6,7 @@
     </div>
     <div class="edu">工作经历 自学前端半年</div>
     <div class="ability">这里是能力值
-      <lineChart/>
+      <radar/>
         <div>
     <p>1.小程序可以独立进行小程序开发，熟悉AAA、BBB、CCC相关API或组件的使用</p>
     <p>熟悉Vue常用功能如：组件、Vue-Router、双向绑定等</p>
@@ -26,7 +26,7 @@
 
 <script>
 import topbar from './components/topBar'
-import lineChart from './components/lineChart'
+import radar from './components/radar'
 export default {
   name: 'App',
   data() {
@@ -34,7 +34,7 @@ export default {
   },
   components: {
     topbar,
-    lineChart
+    radar
   }
 }
 </script>
