@@ -7,8 +7,9 @@
             <div class="option">
                 <ul>
                     <li>名片</li>
-                    <li>作品</li>
                     <li>联系方式</li>
+                    <li>技能</li>
+                    <li>作品</li>
                 </ul>
             </div>
         </div>

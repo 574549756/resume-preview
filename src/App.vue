@@ -1,40 +1,43 @@
 <template>
-<div id="app">
-    <topbar class="header"/>
-    <div class="IdBoard">这里是名片卡
-        <footer class="connection">这里是联系方式</footer>
+  <div id="app">
+    <div class="leftBar">
+      <div class="photo"></div>
+      <div class="edu">工作经历 自学前端半年</div>
+        <radar/>
+      
     </div>
-    <div class="edu">工作经历 自学前端半年</div>
-    <div class="ability">这里是能力值
-      <radar/>
+    <div class="rightSide">
+      <idBoard/>
+      <div class="ability">这里是能力值
         <div>
-    <p>1.小程序可以独立进行小程序开发，熟悉AAA、BBB、CCC相关API或组件的使用</p>
-    <p>熟悉Vue常用功能如：组件、Vue-Router、双向绑定等</p>
-    <p>jQuery 熟悉常用API，能使用jQuery制作网站、轮播、tab组件等</p>
-    <p>HTML5 CSS3 独立制作精美网页，掌握CSS3动画、过渡效果、响应式等常用技术</p>
-    <p>移动端页面 会使用rem、vw/vh、FastClick(去看看别人的博客) 等技术制作适配手机设备的页面</p>
+          <p>1.小程序可以独立进行小程序开发，熟悉AAA、BBB、CCC相关API或组件的使用</p>
+          <p>熟悉Vue常用功能如：组件、Vue-Router、双向绑定等</p>
+          <p>jQuery 熟悉常用API，能使用jQuery制作网站、轮播、tab组件等</p>
+          <p>HTML5 CSS3 独立制作精美网页，掌握CSS3动画、过渡效果、响应式等常用技术</p>
+          <p>移动端页面 会使用rem、vw/vh、FastClick(去看看别人的博客) 等技术制作适配手机设备的页面</p>
         </div>
+      </div>
+      <div class="project">这里是项目 源码 预览 二维码(https://cli.im) 关键词 描述
+        <p>scrollreveal js</p>
+        <p>echarts</p>
+        <p>particle js</p>
+        <p>awesome javascript</p>
+      </div>
     </div>
-    <div class="project">这里是项目 源码 预览 二维码(https://cli.im) 关键词 描述
-      <p>scrollreveal js</p>
-      <p>echarts</p>
-      <p>particle js</p>
-      <p>awesome javascript</p>
-    </div>
-</div>
+  </div>
 </template>
 
 <script>
-import topbar from './components/topBar'
 import radar from './components/radar'
+import idBoard from './components/idBoard'
 export default {
   name: 'App',
   data() {
     return {}
   },
   components: {
-    topbar,
-    radar
+    radar,
+    idBoard
   }
 }
 </script>
@@ -46,18 +49,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  .header {
-    height: 56px;
-    width: 100%;
-    background: green;
-    position: absolute;
-    top: 0;
-  }
-  .IdBoard {
-    height: 300px;
-    width: 100%;
-    background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  .leftBar {
+    display: flex;
+    flex-direction: column;
+    background: #424244;
+    width: 35vw;
+    height: 98vh;
+    .photo {
+      background: green;
+      width: 35vw;
+      height: 35vw;
+    }
   }
 }
 </style>
