@@ -29,7 +29,7 @@ export default {}
   justify-content: center;
   align-items: flex-start;
   height: 35vw;
-  width: 100%;
+  width: 65vw;
   background: #f8f8f8;
 
   .photo {
@@ -45,11 +45,6 @@ export default {}
     ul {
       display: flex;
       flex-direction: column;
-      li {
-        font-size: 16px;
-        height: 20px;
-        line-height: 0px;
-      }
     }
   }
 }

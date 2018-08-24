@@ -2,7 +2,8 @@
   <div id="app">
     <div class="leftBar">
       <div class="photo"></div>
-      <div class="edu">工作经历 自学前端半年</div>
+      <div class="mainTitle">前端工程师</div>
+      <div class="edu"></div>
         <radar/>
       
     </div>
@@ -56,12 +57,22 @@ export default {
     flex-direction: column;
     background: #424244;
     width: 35vw;
-    height: 98vh;
+    height: 100vh;
+    .mainTitle {
+      background: #f56c6ca4;
+      height: 10vw;
+      width: 55vw;
+      margin-top: -10vw;
+      z-index: 10;
+    }
     .photo {
       background: green;
       width: 35vw;
       height: 35vw;
     }
+  }
+  .rightSide {
+    background: #f3f3f5;
   }
 }
 </style>

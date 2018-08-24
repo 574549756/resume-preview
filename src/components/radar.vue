@@ -1,6 +1,28 @@
 <template>
-    <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
-
+  <div class="skillsRadar">
+    <div class="skillsIcon">
+      <svg class="vue" aria-hidden="true">
+        <use xlink:href="#icon-vuejs"></use>
+      </svg>
+      <svg class="node" aria-hidden="true">
+        <use xlink:href="#icon-node-js"></use>
+      </svg>
+      <svg class="jquery" aria-hidden="true">
+        <use xlink:href="#icon-jquery"></use>
+      </svg>
+      <svg class="react" aria-hidden="true">
+        <use xlink:href="#icon-react"></use>
+      </svg>
+      <svg class="html" aria-hidden="true">
+        <use xlink:href="#icon-html"></use>
+      </svg>
+      <svg class="javascript" aria-hidden="true">
+        <use xlink:href="#icon-socialjavascript"></use>
+      </svg>
+    </div>
+    <div id="myChart" :style="{width: '200px', height: '200px',margin:'auto'}"></div>
+    
+  </div>
 </template>
 
 <script>
@@ -26,17 +48,57 @@ export default {
       let myChart = echarts.init(document.getElementById('myChart'), 'dark')
       // 绘制图表
       myChart.setOption({
-        title: { text: 'ECharts 入门示例' },
+        backgroundColor: '#424244',
+        title: {},
         tooltip: {},
-        xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+        legend: {},
+        radar: {
+          // shape: 'circle',
+          name: {
+            textStyle: {
+              color: 'rgba(238, 197, 102,0)'
+            }
+          },
+          shape: 'circle',
+          splitArea: {
+            show: false
+          },
+          splitLine: {
+            lineStyle: {
+              color: [
+                'rgba(238, 197, 102, 0.1)',
+                'rgba(238, 197, 102, 0.2)',
+                'rgba(238, 197, 102, 0.4)',
+                'rgba(238, 197, 102, 0.6)',
+                'rgba(238, 197, 102, 0.8)',
+                'rgba(238, 197, 102, 1)'
+              ].reverse()
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: 'rgba(238, 197, 102, 0.5)'
+            }
+          },
+          indicator: [
+            { name: 'nodejs', max: 100 },
+            { name: 'react', max: 100 },
+            { name: 'vue', max: 100 },
+            { name: 'js', max: 100 },
+            { name: 'html', max: 100 },
+            { name: 'jquery', max: 100 }
+          ]
         },
-        yAxis: {},
         series: [
           {
-            name: '销量',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
+            type: 'radar',
+            areaStyle: { normal: { opacity: 0.5 } },
+            data: [
+              {
+                value: [50, 20, 60, 80, 90, 60],
+                name: ''
+              }
+            ]
           }
         ]
       })
@@ -44,3 +106,55 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@media print {
+  #mychart {
+    width: 35vw;
+    height: 35vw;
+  }
+}
+
+#mychart {
+  width: 35vw;
+  height: 35vw;
+}
+.skillsRadar {
+  margin-top: 30px;
+  .skillsIcon {
+    position: absolute;
+    z-index: 10;
+    height: 300px;
+    margin-left: 80px;
+    svg {
+      fill: #f3f3f5;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+    .vue {
+      top: 135px;
+      left: -30px;
+    }
+    .react {
+      left: -30px;
+      top: 45px;
+    }
+    .node {
+      left: 48px;
+    }
+    .jquery {
+      left: 130px;
+      top: 45px;
+    }
+    .javascript {
+      left: 48px;
+      top: 180px;
+    }
+    .html {
+      left: 130px;
+      top: 135px;
+    }
+  }
+}
+</style>
