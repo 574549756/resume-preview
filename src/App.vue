@@ -2,14 +2,22 @@
   <div id="app">
     <div class="leftBar">
       <div class="photo"></div>
-      <div class="mainTitle">前端工程师</div>
+      <div class="mainTitle">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-gerenlogoBold"></use>
+        </svg>
+        <h1>张博涵</h1>前端工程师</div>
       <div class="edu"></div>
+      <div class="skills">
+        <h2>SKILLS</h2>
+        <div class="headerline"></div>
         <radar/>
-      
+      </div>
     </div>
     <div class="rightSide">
       <idBoard/>
-      <div class="ability">这里是能力值
+      <div class="ability">
+
         <div>
           <p>1.小程序可以独立进行小程序开发，熟悉AAA、BBB、CCC相关API或组件的使用</p>
           <p>熟悉Vue常用功能如：组件、Vue-Router、双向绑定等</p>
@@ -59,11 +67,21 @@ export default {
     width: 35vw;
     height: 100vh;
     .mainTitle {
+      display: flex;
       background: #f56c6ca4;
-      height: 10vw;
+      height: 9vw;
       width: 55vw;
-      margin-top: -10vw;
+      margin-top: -9vw;
       z-index: 10;
+      svg {
+        fill: #f3f3f5;
+        width: 6vw;
+        height: 6vw;
+        position: absolute;
+      }
+      h1 {
+        font-size: 20px;
+      }
     }
     .photo {
       background: green;
