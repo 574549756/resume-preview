@@ -1,5 +1,9 @@
 <template>
   <div class="skillsRadar">
+    <div class="header">
+      <h3>SKILLS</h3>
+      <div class="breakLine"></div>
+    </div>
     <div class="skillsIcon">
       <svg class="vue" aria-hidden="true">
         <use xlink:href="#icon-vuejs"></use>
@@ -121,6 +125,31 @@ export default {
 }
 .skillsRadar {
   margin-top: 30px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 20px 0;
+    h3 {
+      color: white;
+      margin: 0 0 10px 5vw;
+    }
+    .breakLine {
+      align-self: center;
+      background-color: #5c5b5c;
+      height: 2px;
+      width: 25vw;
+      z-index: 100;
+      &::before {
+        display: block;
+        content: '';
+        align-self: flex-start;
+        background: #f56c6c;
+        height: 2px;
+        width: 4.25vw;
+      }
+    }
+  }
   .skillsIcon {
     position: absolute;
     z-index: 10;

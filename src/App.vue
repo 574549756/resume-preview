@@ -9,8 +9,6 @@
         <h1>张博涵</h1>前端工程师</div>
       <div class="edu"></div>
       <div class="skills">
-        <h2>SKILLS</h2>
-        <div class="headerline"></div>
         <radar/>
       </div>
     </div>
@@ -68,7 +66,7 @@ export default {
     height: 100vh;
     .mainTitle {
       display: flex;
-      background: #f56c6ca4;
+      background: #f56363dc;
       height: 9vw;
       width: 55vw;
       margin-top: -9vw;
@@ -84,7 +82,7 @@ export default {
       }
     }
     .photo {
-      background: green;
+      background: black;
       width: 35vw;
       height: 35vw;
     }

@@ -1,5 +1,9 @@
 <template>
 <div class="IdBoard">
+  <div class="header">
+      <h3>个人信息</h3>
+      <div class="breakLine"></div>
+    </div>
       <div class="idDetail">
         <ul>
           <li>姓名</li>
@@ -24,17 +28,36 @@ export default {}
 <style lang="scss">
 .IdBoard {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
   height: 35vw;
   width: 65vw;
-  background: #f8f8f8;
-
-  .photo {
-    width: 150px;
-    height: 200px;
-    background: black;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 20px 0;
+    h3 {
+      color: black;
+      margin: 0 0 10px 2vw;
+    }
+    .breakLine {
+      align-self: center;
+      background-color: #5c5b5c;
+      height: 2px;
+      width: 59vw;
+      margin-left: 2vw;
+      z-index: 100;
+      &::before {
+        display: block;
+        content: '';
+        align-self: flex-start;
+        background: #f56c6c;
+        height: 2px;
+        width: 4.25vw;
+      }
+    }
   }
   .idDetail {
     display: flex;
