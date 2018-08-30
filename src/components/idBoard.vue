@@ -76,6 +76,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
     ul {
       margin: 0 0 10px 3vw;
       display: flex;
