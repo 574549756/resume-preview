@@ -93,6 +93,7 @@ export default {
   }
   .rightSide {
     background: #f3f3f5;
+    width: 100%;
   }
 }
 </style>
