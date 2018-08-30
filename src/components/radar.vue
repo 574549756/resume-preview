@@ -1,7 +1,7 @@
 <template>
   <div class="skillsRadar">
     <div class="header">
-      <h3>SKILLS</h3>
+      <h3>技能</h3>
       <div class="breakLine"></div>
     </div>
     <div class="skillsIcon">
@@ -114,14 +114,14 @@ export default {
 <style lang="scss">
 @media print {
   #mychart {
-    width: 35vw;
-    height: 35vw;
+    width: 33vw;
+    height: 33vw;
   }
 }
 
 #mychart {
-  width: 35vw;
-  height: 35vw;
+  width: 33vw;
+  height: 33vw;
 }
 .skillsRadar {
   margin-top: 30px;
@@ -132,20 +132,24 @@ export default {
     margin: 30px 0 20px 0;
     h3 {
       color: white;
-      margin: 0 0 10px 5vw;
+      margin: 0 0 10px 4vw;
     }
     .breakLine {
       align-self: center;
-      background-color: #5c5b5c;
-      height: 2px;
+      background-color: #bcbcbe;
+      height: 1px;
       width: 25vw;
       z-index: 100;
+      position: relative;
+
       &::before {
+        position: absolute;
+        top: -1px;
         display: block;
         content: '';
         align-self: flex-start;
         background: #f56c6c;
-        height: 2px;
+        height: 3px;
         width: 4.25vw;
       }
     }
@@ -163,25 +167,25 @@ export default {
     }
     .vue {
       top: 135px;
-      left: -30px;
+      left: -35px;
     }
     .react {
-      left: -30px;
+      left: -35px;
       top: 45px;
     }
     .node {
-      left: 48px;
+      left: 41px;
     }
     .jquery {
-      left: 130px;
+      left: 126px;
       top: 45px;
     }
     .javascript {
-      left: 48px;
+      left: 41px;
       top: 180px;
     }
     .html {
-      left: 130px;
+      left: 126px;
       top: 135px;
     }
   }
