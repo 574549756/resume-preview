@@ -12,6 +12,17 @@
     </div>
 </template>
 
+<script>
+export default {
+	data(){
+		return{}
+	},
+	methods: {},
+	components:{}
+}
+</script>
+
+
 <style lang="scss">
 .experience {
   p {
@@ -37,7 +48,7 @@
       align-self: flex-start;
       background-color: #bcbcbe;
       height: 1px;
-      width: 59vw;
+	  width: 59vw;
       z-index: 100;
       position: relative;
       &::before {
@@ -51,8 +62,6 @@
         width: 4.25vw;
       }
     }
-  }
-  p {
   }
 }
 </style>

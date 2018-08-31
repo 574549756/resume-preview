@@ -28,7 +28,9 @@
 <script>
 import connection from './connection'
 export default {
-  data() {},
+  data(){
+    return{}
+  },
   components: {
     connection
   }
