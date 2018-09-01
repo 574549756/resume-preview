@@ -79,6 +79,33 @@
         </div>
       </div>
     </div>
+    <div class="pro">
+      <img v-bind:src="`/static/img/${projects.projectImg[3]}`" alt="">
+      <div class="proDiscription">
+        <div class="stack">
+          <p>{{projects.projectName[3]}}</p>
+          <div class="stackIcon">
+            <svg aria-hidden="true">
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[0]}`"></use>
+            </svg>
+            <svg aria-hidden="true">
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[4]}`"></use>
+            </svg>
+            <svg aria-hidden="true" >
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[5]}`"></use>
+            </svg>
+            <svg aria-hidden="true" >
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[6]}`"></use>
+            </svg>
+          </div>
+        </div>
+        <p>{{projects.projectDis[3]}}</p>
+        <div class="linkArea">
+          <a href="">浏览链接</a>
+          <a href="">代码链接</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -90,7 +117,8 @@
           projectImg: [
           'canvas.jpg',
           'nav-page.jpg',
-          'slide.jpg'
+          'slide.jpg',
+          'vueResume.png'
         ],
           projectIcons: [
             'vuejs',
@@ -104,12 +132,14 @@
           projectName: [
             'Canvas画板',
             'KeyBoard导航页',
-            '无缝轮播组件'
+            '无缝轮播组件',
+            'Vue简历编辑器'
           ],
           projectDis: [
             'Canvas画板，blablablabla叽里呱啦叽里呱啦叽里呱啦blablablablablablablablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
             '这是个键盘，拿来存网站导航的，原生 JS 监听键盘事件。通过favicon获取网站图标，通过　favicon.byi.pw?url=domain　排除无法获取的网站图标',
-            '通过 settimeout 实现自动轮播，改变 class　状态机的方式来改变监听事件。'
+            '通过 settimeout 实现自动轮播，改变 class　状态机的方式来改变监听事件。',
+            '通过 Vue 实现数据绑定'
           ]
         }
       }
@@ -127,6 +157,10 @@
         display: flex;
         justify-content: space-between;
         align-items: space-between;
+        padding: 5px;
+        background: #f2f2f3;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
         .proDiscription {
             margin: 0 0 0 12px;
             position: relative;

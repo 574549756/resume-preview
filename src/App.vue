@@ -45,57 +45,57 @@
 </script>
 
 <style lang="scss">
-	#app {
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-		display: flex;
-		flex-direction: row;
-		.leftBar {
-			display: flex;
-			flex-direction: column;
-			background: #424244;
-			width: 33vw;
-			height: 100vh;
-			.mainTitle {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				background: #f56363dc;
-				height: 10vw;
-				width: 55vw;
-				margin-top: -10vw;
-				z-index: 10;
-				padding-left: 3vw;
-				svg {
-					fill: #f3f3f5;
-					width: 6vw;
-					height: 6vw;
-					position: absolute;
-				}
-				h1 {
-					font-size: 30px;
-					font-weight: 300;
-					margin: 0 190px 0 0;
-					color: #f3f3f3;
-				}
-				h2 {
-					font-size: 13px;
-					color: #f3f3f3;
-					margin: 0 210px 0 0;
-				}
-			}
-			.photo {
-				background: black;
-				width: 33vw;
-				height: 33vw;
-			}
-		}
-		.rightSide {
-			background: #f3f3f5;
-			width: 100%;
-		}
-	}
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: row;
+    .leftBar {
+        display: flex;
+        flex-direction: column;
+        background: #424244;
+        width: 33vw;
+        height: 100vh;
+        .mainTitle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #f56363dc;
+            height: 10vw;
+            width: 55vw;
+            margin-top: -10vw;
+            z-index: 10;
+            padding-left: 3vw;
+            svg {
+                fill: #f3f3f5;
+                width: 6vw;
+                height: 6vw;
+                position: absolute;
+            }
+            h1 {
+                font-size: 30px;
+                font-weight: 300;
+                margin: 0 190px 0 0;
+                color: #f3f3f3;
+            }
+            h2 {
+                font-size: 13px;
+                color: #f3f3f3;
+                margin: 0 210px 0 0;
+            }
+        }
+        .photo {
+            background: black;
+            width: 33vw;
+            height: 33vw;
+        }
+    }
+    .rightSide {
+        background: #f3f3f5;
+        width: 100%;
+    }
+}
 </style>

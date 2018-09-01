@@ -25,43 +25,43 @@ export default {
 
 <style lang="scss">
 .experience {
-  p {
-    font-size: 12px;
-    color: #979695;
-  }
-  .experienceDetail {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px 10px 3vw;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 15px 0 20px 3vw;
-    h3 {
-      color: black;
-      margin: 0 0 10px 0;
+    p {
+        font-size: 12px;
+        color: #979695;
     }
-    .breakLine {
-      align-self: flex-start;
-      background-color: #bcbcbe;
-      height: 1px;
-	  width: 59vw;
-      z-index: 100;
-      position: relative;
-      &::before {
-        position: absolute;
-        top: -1px;
-        display: block;
-        content: '';
-        align-self: flex-start;
-        background: #f56c6c;
-        height: 3px;
-        width: 4.25vw;
-      }
+    .experienceDetail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px 10px 3vw;
     }
-  }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 0 20px 3vw;
+        h3 {
+            color: black;
+            margin: 0 0 10px 0;
+        }
+        .breakLine {
+            align-self: flex-start;
+            background-color: #bcbcbe;
+            height: 1px;
+            width: 59vw;
+            z-index: 100;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: -1px;
+                display: block;
+                content: '';
+                align-self: flex-start;
+                background: #f56c6c;
+                height: 3px;
+                width: 4.25vw;
+            }
+        }
+    }
 }
 </style>
