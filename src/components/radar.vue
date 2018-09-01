@@ -20,6 +20,9 @@
 			<svg class="html" aria-hidden="true">
 				<use xlink:href="#icon-html"></use>
 			</svg>
+			<svg class="css" aria-hidden="true">
+				<use xlink:href="#icon-language-css"></use>
+			</svg>
 			<svg class="javascript" aria-hidden="true">
 				<use xlink:href="#icon-socialjavascript"></use>
 			</svg>
@@ -99,7 +102,7 @@
 							areaStyle: { normal: { opacity: 0.5 } },
 							data: [
 								{
-									value: [50, 20, 60, 80, 90, 60],
+									value: [50, 20, 60, 80, 85, 60],
 									name: ''
 								}
 							]
@@ -112,83 +115,87 @@
 </script>
 
 <style lang="scss">
-	@media print {
-		#mychart {
-			width: 33vw;
-			height: 33vw;
-		}
-	}
+@media print {
+    #mychart {
+        width: 33vw;
+        height: 33vw;
+    }
+}
 
-	#mychart {
-		width: 33vw;
-		height: 33vw;
-	}
+#mychart {
+    width: 33vw;
+    height: 33vw;
+}
 
-	.skillsRadar {
-		margin-top: 30px;
-		.header {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			margin: 30px 0 20px 0;
-			h3 {
-				color: white;
-				margin: 0 0 10px 4vw;
-			}
-			.breakLine {
-				align-self: center;
-				background-color: #bcbcbe;
-				height: 1px;
-				width: 25vw;
-				z-index: 100;
-				position: relative;
+.skillsRadar {
+    margin-top: 30px;
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0 20px 0;
+        h3 {
+            color: white;
+            margin: 0 0 10px 4vw;
+        }
+        .breakLine {
+            align-self: center;
+            background-color: #bcbcbe;
+            height: 1px;
+            width: 25vw;
+            z-index: 100;
+            position: relative;
 
-				&::before {
-					position: absolute;
-					top: -1px;
-					display: block;
-					content: '';
-					align-self: flex-start;
-					background: #f56c6c;
-					height: 3px;
-					width: 4.25vw;
-				}
-			}
-		}
-		.skillsIcon {
-			position: absolute;
-			z-index: 10;
-			height: 300px;
-			margin-left: 80px;
-			svg {
-				fill: #f3f3f5;
-				width: 20px;
-				height: 20px;
-				position: absolute;
-			}
-			.vue {
-				top: 135px;
-				left: -35px;
-			}
-			.react {
-				left: -35px;
-				top: 45px;
-			}
-			.node {
-				left: 41px;
-			}
-			.jquery {
-				left: 126px;
-				top: 45px;
-			}
-			.javascript {
-				left: 41px;
-				top: 180px;
-			}
-			.html {
-				left: 126px;
-				top: 135px;
-			}
-		}
-	}
+            &::before {
+                position: absolute;
+                top: -1px;
+                display: block;
+                content: '';
+                align-self: flex-start;
+                background: #f56c6c;
+                height: 3px;
+                width: 4.25vw;
+            }
+        }
+    }
+    .skillsIcon {
+        position: absolute;
+        z-index: 10;
+        height: 300px;
+        margin-left: 80px;
+        svg {
+            fill: #f3f3f5;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+        .vue {
+            top: 135px;
+            left: -35px;
+        }
+        .react {
+            left: -35px;
+            top: 45px;
+        }
+        .node {
+            left: 41px;
+        }
+        .jquery {
+            left: 116px;
+            top: 45px;
+        }
+        .javascript {
+            left: 41px;
+            top: 180px;
+        }
+        .html {
+            left: 116px;
+            top: 135px;
+        }
+        .css {
+            left: 136px;
+            top: 135px;
+        }
+    }
+}
 </style>
