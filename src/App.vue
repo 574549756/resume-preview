@@ -14,6 +14,7 @@
 				<radar/>
 			</div>
 			<abilityDiscription/>
+            <onlinelink/>
 		</div>
 		<div class="rightSide">
 			<idBoard/>
@@ -24,6 +25,7 @@
 </template>
 
 <script>
+import onlinelink from './components/onlinelink'
 	import radar from './components/radar'
 	import idBoard from './components/idBoard'
 	import experience from './components/experience'
@@ -36,10 +38,11 @@
 		},
 		components: {
 			radar,
-			idBoard,
+		    idBoard,
 			experience,
 			abilityDiscription,
-			portfolio
+			portfolio,
+            onlinelink
 		}
 	}
 </script>
@@ -76,15 +79,15 @@
                 position: absolute;
             }
             h1 {
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: 300;
-                margin: 0 190px 0 0;
+                margin: 0 0 0 0;
                 color: #f3f3f3;
             }
             h2 {
                 font-size: 13px;
                 color: #f3f3f3;
-                margin: 0 210px 0 0;
+                margin: 0 0 0 0;
             }
         }
         .photo {

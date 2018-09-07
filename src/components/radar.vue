@@ -12,16 +12,13 @@
 				<use xlink:href="#icon-node-js"></use>
 			</svg>
 			<svg class="jquery" aria-hidden="true">
-				<use xlink:href="#icon-jquery"></use>
+				<use xlink:href="#icon-http"></use>
 			</svg>
 			<svg class="react" aria-hidden="true">
-				<use xlink:href="#icon-react"></use>
+				<use xlink:href="#icon-minglinghang"></use>
 			</svg>
 			<svg class="html" aria-hidden="true">
 				<use xlink:href="#icon-html"></use>
-			</svg>
-			<svg class="css" aria-hidden="true">
-				<use xlink:href="#icon-language-css"></use>
 			</svg>
 			<svg class="javascript" aria-hidden="true">
 				<use xlink:href="#icon-socialjavascript"></use>
@@ -168,6 +165,7 @@
             width: 20px;
             height: 20px;
             position: absolute;
+            background: #f56c6c;
         }
         .vue {
             top: 135px;
@@ -181,6 +179,7 @@
             left: 41px;
         }
         .jquery {
+            fill: #f3f3f5;
             left: 116px;
             top: 45px;
         }

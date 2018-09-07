@@ -162,14 +162,14 @@
             'KeyBoard导航页',
             '无缝轮播组件',
             'Vue简历编辑器',
-            'Css蝙蝠侠'
+            'CSS蝙蝠侠'
           ],
           projectDis: [
-            'Canvas画板，blablablabla叽里呱啦叽里呱啦叽里呱啦blablablablablablablablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+            'Canvas画板，通过使用 Canvas API 实现画板的:画笔、橡皮擦、更改颜色、清屏、保存等功能。',
             '这是个键盘，拿来存网站导航的，原生 JS 监听键盘事件。通过favicon获取网站图标，通过　favicon.byi.pw?url=domain　排除无法获取的网站图标',
             '通过 settimeout 实现自动轮播，改变 class　状态机的方式来改变监听事件。',
             '通过 Vue 实现数据绑定',
-            '代码画蝙蝠侠，通过 settimeout 实现代码逐个显示，绘制蝙蝠侠的过程'
+            '使用 CSS3 绘制蝙蝠侠，通过 settimeout 实现代码逐个显示，绘制蝙蝠侠的过程'
           ]
         }
       }
