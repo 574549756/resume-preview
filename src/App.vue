@@ -61,7 +61,7 @@ import onlinelink from './components/onlinelink'
         flex-direction: column;
         background: #424244;
         width: 33vw;
-        height: 100vh;
+        height: 101.381vh;
         .mainTitle {
             display: flex;
             flex-direction: column;
