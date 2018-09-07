@@ -80,6 +80,33 @@
       </div>
     </div>
     <div class="pro">
+      <img v-bind:src="`/static/img/${projects.projectImg[4]}`" alt="">
+      <div class="proDiscription">
+        <div class="stack">
+          <p>{{projects.projectName[4]}}</p>
+          <div class="stackIcon">
+            <svg aria-hidden="true">
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[0]}`"></use>
+            </svg>
+            <svg aria-hidden="true">
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[4]}`"></use>
+            </svg>
+            <svg aria-hidden="true" >
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[5]}`"></use>
+            </svg>
+            <svg aria-hidden="true" >
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[6]}`"></use>
+            </svg>
+          </div>
+        </div>
+        <p>{{projects.projectDis[4]}}</p>
+        <div class="linkArea">
+          <a href="">浏览链接</a>
+          <a href="">代码链接</a>
+        </div>
+      </div>
+    </div>
+    <div class="pro">
       <img v-bind:src="`/static/img/${projects.projectImg[3]}`" alt="">
       <div class="proDiscription">
         <div class="stack">
@@ -107,10 +134,10 @@
       </div>
     </div>
     <div class="pro">
-      <img v-bind:src="`/static/img/${projects.projectImg[4]}`" alt="">
+      <img v-bind:src="`/static/img/${projects.projectImg[3]}`" alt="">
       <div class="proDiscription">
         <div class="stack">
-          <p>{{projects.projectName[4]}}</p>
+          <p>{{projects.projectName[3]}}</p>
           <div class="stackIcon">
             <svg aria-hidden="true">
               <use v-bind:xlink:href="`#icon-${projects.projectIcons[0]}`"></use>
@@ -126,7 +153,7 @@
             </svg>
           </div>
         </div>
-        <p>{{projects.projectDis[4]}}</p>
+        <p>{{projects.projectDis[3]}}</p>
         <div class="linkArea">
           <a href="">浏览链接</a>
           <a href="">代码链接</a>
@@ -240,7 +267,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 15px 0 20px 0;
+        margin: 15px 0 30px 0;
         h3 {
             color: black;
             margin: 0 0 10px 0;
@@ -249,8 +276,7 @@
             align-self: center;
             background-color: #bcbcbe;
             height: 1px;
-            margin: 0 0 0 0vw;
-            width: 59vw;
+            width: 70vw;
             z-index: 100;
             position: relative;
             &::before {

@@ -39,57 +39,57 @@ export default {
 
 <style lang="scss">
 .IdBoard {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 35vw;
-  width: 65vw;
-  .header {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    margin: 30px 0 20px 0;
-    h3 {
-      color: black;
-      margin: 0 0 10px 3vw;
+    height: 35vw;
+    width: 65vw;
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0 20px 0;
+        h3 {
+            color: black;
+            margin: 0 0 10px 3vw;
+        }
+        .breakLine {
+            align-self: center;
+            background-color: #bcbcbe;
+            height: 1px;
+            width: 70vw;
+            margin-left: 3vw;
+            z-index: 100;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: -1px;
+                display: block;
+                content: '';
+                align-self: flex-start;
+                background: #f56c6c;
+                height: 3px;
+                width: 4.25vw;
+            }
+        }
     }
-    .breakLine {
-      align-self: center;
-      background-color: #bcbcbe;
-      height: 1px;
-      width: 59vw;
-      margin-left: 3vw;
-      z-index: 100;
-      position: relative;
-      &::before {
-        position: absolute;
-        top: -1px;
-        display: block;
-        content: '';
-        align-self: flex-start;
-        background: #f56c6c;
-        height: 3px;
-        width: 4.25vw;
-      }
+    .idDetail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        ul {
+            margin: 0 0 10px 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #979695;
+            li {
+                font-size: 14px;
+            }
+        }
     }
-  }
-  .idDetail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    ul {
-      margin: 0 0 10px 3vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      color: #979695;
-      li {
-        font-size: 14px;
-      }
-    }
-  }
 }
 </style>

@@ -99,7 +99,7 @@
 							areaStyle: { normal: { opacity: 0.5 } },
 							data: [
 								{
-									value: [50, 20, 60, 80, 85, 60],
+									value: [30, 50, 60, 80, 85, 60],
 									name: ''
 								}
 							]
@@ -162,34 +162,37 @@
         margin-left: 80px;
         svg {
             fill: #f3f3f5;
-            width: 20px;
-            height: 20px;
+            width: 26px;
+            height: 26px;
             position: absolute;
             background: #f56c6c;
+            border-radius: 13px;
+            border: 3px solid #f56c6c;
         }
         .vue {
-            top: 135px;
-            left: -35px;
+            top: 132px;
+            left: -42px;
         }
         .react {
-            left: -35px;
-            top: 45px;
+            left: -42px;
+            top: 42px;
         }
         .node {
-            left: 41px;
+            left: 39px;
+            top: -3px;
         }
         .jquery {
             fill: #f3f3f5;
-            left: 116px;
-            top: 45px;
+            left: 118px;
+            top: 43px;
         }
         .javascript {
-            left: 41px;
-            top: 180px;
+            left: 39px;
+            top: 178px;
         }
         .html {
-            left: 116px;
-            top: 135px;
+            left: 118px;
+            top: 132px;
         }
         .css {
             left: 136px;

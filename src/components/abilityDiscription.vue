@@ -42,6 +42,18 @@
 				</svg>
 				<p>了解 Node.js 的一些知识，能够使用 Node.js 搭建小型服务器，根据请求的 URL 返回指定数据。</p>
 			</div>
+			<div class="cli">
+				<svg class="cli" aria-hidden="true">
+					<use xlink:href="#icon-minglinghang"></use>
+				</svg>
+				<p>了解命令行，能够使用命令行进行常用操作</p>
+			</div>
+			<div class="git">
+				<svg class="git" aria-hidden="true">
+					<use xlink:href="#icon-github1"></use>
+				</svg>
+				<p>了解 git 版本控制工具及 git 常用操作</p>
+			</div>
 
 		</div>
 	</div>
@@ -60,10 +72,10 @@
             margin-left: 40px;
         }
         div {
-            margin: 10px 0;
+            margin: 15px 0;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             svg {
                 position: absolute;
                 width: 26px;

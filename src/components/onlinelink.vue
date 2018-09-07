@@ -5,7 +5,7 @@
             <div class="breakLine"></div>
         </div>
         <div class="onlineMode">
-            <a href="">在线版链接</a>
+            <a href="">Online Mode</a>
         </div>
     </div>
 </template>
@@ -16,7 +16,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 30px 0 20px 0;
+        margin: 25px 0 20px 0;
         h3 {
             color: white;
             margin: 0 0 10px 4vw;
@@ -45,14 +45,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px 0 30px 0;
         a {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 20px;
-            width: 100px;
+            height: 50px;
+            width: 150px;
+            font-size: 15px;
+            font-weight: 700;
             color: white;
-            background: gray;
+            border: 3px solid #bcbcbe;
+            border-radius: 25px;
         }
     }
 }

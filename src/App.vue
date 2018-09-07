@@ -61,12 +61,12 @@ import onlinelink from './components/onlinelink'
         flex-direction: column;
         background: #424244;
         width: 33vw;
-        height: 101.381vh;
+        height: 100%;
         .mainTitle {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #f56363dc;
+            background: #ec5658c4;
             height: 10vw;
             width: 55vw;
             margin-top: -10vw;
