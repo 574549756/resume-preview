@@ -72,7 +72,7 @@
             margin: 10px 0;
             padding-bottom: 1px;
             > header {
-                margin: 0 30px 0 0;
+                margin: 0 30px 0 25px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -93,7 +93,7 @@
                 }
             }
             > main {
-                margin: 0 0 0 30px;
+                margin: 0 0 0 25px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;

@@ -221,10 +221,10 @@
         .proDiscription {
             margin: 0 0 0 12px;
             position: relative;
-            width: 45vw;
+            width: 50vw;
             > p {
                 margin: 5px 0;
-                width: 45vw;
+                width: 50vw;
                 text-align: left;
                 word-break: break-all;
                 word-wrap: break-word;
