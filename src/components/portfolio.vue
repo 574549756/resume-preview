@@ -26,8 +26,8 @@
         </div>
         <p>{{projects.projectDis[0]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="https://574549756.github.io/canvas/index.html">浏览链接</a>
+          <a href="https://github.com/574549756/canvas">代码链接</a>
         </div>
       </div>
     </div>
@@ -50,8 +50,8 @@
         </div>
         <p>{{projects.projectDis[1]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="https://574549756.github.io/myBookmarks/nav-demo/index.html">浏览链接</a>
+          <a href="https://github.com/574549756/myBookmarks">代码链接</a>
         </div>
       </div>
     </div>
@@ -74,8 +74,8 @@
         </div>
         <p>{{projects.projectDis[2]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="https://574549756.github.io/Jquery-slide/index.html">浏览链接</a>
+          <a href="https://github.com/574549756/Jquery-slide">代码链接</a>
         </div>
       </div>
     </div>
@@ -101,8 +101,8 @@
         </div>
         <p>{{projects.projectDis[4]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="https://574549756.github.io/cssBatman/">浏览链接</a>
+          <a href="https://github.com/574549756/cssBatman">代码链接</a>
         </div>
       </div>
     </div>
@@ -128,8 +128,8 @@
         </div>
         <p>{{projects.projectDis[3]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="https://574549756.github.io/vue-resumer-demo/dist/index.html">浏览链接</a>
+          <a href="https://github.com/574549756/vue-resumer-demo">代码链接</a>
         </div>
       </div>
     </div>
@@ -230,7 +230,7 @@
                 word-wrap: break-word;
             }
             .stack {
-                width: 45vw;
+                width: 50vw;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
