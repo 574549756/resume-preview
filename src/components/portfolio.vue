@@ -134,13 +134,13 @@
       </div>
     </div>
     <div class="pro">
-      <img v-bind:src="`/static/img/${projects.projectImg[3]}`" alt="">
+      <img v-bind:src="`/static/img/${projects.projectImg[5]}`" alt="">
       <div class="proDiscription">
         <div class="stack">
-          <p>{{projects.projectName[3]}}</p>
+          <p>{{projects.projectName[5]}}</p>
           <div class="stackIcon">
             <svg aria-hidden="true">
-              <use v-bind:xlink:href="`#icon-${projects.projectIcons[0]}`"></use>
+              <use v-bind:xlink:href="`#icon-${projects.projectIcons[1]}`"></use>
             </svg>
             <svg aria-hidden="true">
               <use v-bind:xlink:href="`#icon-${projects.projectIcons[4]}`"></use>
@@ -153,10 +153,10 @@
             </svg>
           </div>
         </div>
-        <p>{{projects.projectDis[3]}}</p>
+        <p>{{projects.projectDis[5]}}</p>
         <div class="linkArea">
-          <a href="">浏览链接</a>
-          <a href="">代码链接</a>
+          <a href="sticky-note.zealot.fun">浏览链接</a>
+          <a href="https://github.com/574549756/express-sticky-note">代码链接</a>
         </div>
       </div>
     </div>
@@ -173,7 +173,8 @@
           'nav-page.jpg',
           'slide.jpg',
           'vueResume.png',
-          'cssBatman.png'
+          'cssBatman.png',
+          'sticky-note.png'
         ],
           projectIcons: [
             'vuejs',
@@ -189,14 +190,16 @@
             'KeyBoard导航页',
             '无缝轮播组件',
             'Vue简历编辑器',
-            'CSS蝙蝠侠'
+            'CSS蝙蝠侠',
+            'express在线便利贴'
           ],
           projectDis: [
             'Canvas画板，通过使用 Canvas API 实现画板的:画笔、橡皮擦、更改颜色、清屏、保存等功能。',
-            '这是个键盘，拿来存网站导航的，原生 JS 监听键盘事件。通过favicon获取网站图标，通过　favicon.byi.pw?url=domain　排除无法获取的网站图标',
-            '通过 settimeout 实现自动轮播，改变 class　状态机的方式来改变监听事件。',
-            '通过 Vue 实现数据绑定',
-            '使用 CSS3 绘制蝙蝠侠，通过 settimeout 实现代码逐个显示，绘制蝙蝠侠的过程'
+            '使用键盘的网页导航，使用原生 JS 监听键盘事件。通过favicon获取网站图标，通过　favicon.byi.pw?url=domain　排除无法获取的网站图标',
+            '使用 jQuery 制作。通过 settimeout 实现自动轮播，改变 class　状态机的方式来改变监听事件。',
+            '通过 Vue 实现数据绑定，LeanCloud 实现用户注册登录信息的认证， SCSS 完成前端页面。实现在线简历编辑。',
+            '使用 CSS3 绘制蝙蝠侠，通过 settimeout 实现代码逐行显示，绘制蝙蝠侠的过程，可调速',
+            '基于 express 框架处理路由 中间件, ejs 模板搭建页面， less 预处理器处理页面样式，基于 auth 认证的 github 登录。以用户登录秘钥判断是否登录以限制权限。'
           ]
         }
       }

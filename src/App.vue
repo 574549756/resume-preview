@@ -91,7 +91,7 @@ import onlinelink from './components/onlinelink'
             }
         }
         .photo {
-            background: black;
+            background: rgb(100, 100, 105);
             width: 33vw;
             height: 33vw;
         }
