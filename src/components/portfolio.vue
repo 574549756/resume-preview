@@ -155,7 +155,7 @@
         </div>
         <p>{{projects.projectDis[5]}}</p>
         <div class="linkArea">
-          <a href="sticky-note.zealot.fun">浏览链接</a>
+          <a href="http://sticky-note.zealot.fun">浏览链接</a>
           <a href="https://github.com/574549756/express-sticky-note">代码链接</a>
         </div>
       </div>
